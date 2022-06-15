@@ -159,6 +159,7 @@ nav {
   width: 100vw;
   overflow: hidden; }
   .slide .slide-sm .item a img {
+    display: block;
     width: 100%; }
   .slide .slide-ctrl button {
     position: absolute;
@@ -223,5 +224,74 @@ nav {
             margin-right: 4px; }
           .introduce .sns-item a .sns-desc .sns-detail .count {
             font-size: 0.8rem; }
+
+.guide {
+  display: flex; }
+  .guide .app {
+    width: 50%;
+    background-color: #c7a186; }
+    .guide .app a img {
+      display: block;
+      width: 100%; }
+  .guide .delivery {
+    width: 50%;
+    background-color: #b08972; }
+    .guide .delivery a img {
+      display: block;
+      width: 100%; }
+
+.find-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px; }
+  .find-shop h2 {
+    margin-bottom: 8px;
+    text-align: center; }
+  .find-shop p {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 0.9rem; }
+  .find-shop button {
+    padding: 8px 26px;
+    border-radius: 12px;
+    background-color: #e22219;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff; }
+  .find-shop .shop-advantages {
+    display: flex;
+    flex-wrap: wrap; }
+    .find-shop .shop-advantages .advantages-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% / 3);
+      margin-top: 30px; }
+      @media screen and (min-width: 1024px) {
+        .find-shop .shop-advantages .advantages-list {
+          width: fit-content;
+          padding-right: 30px;
+          padding-left: 30px;
+          border-right: 1px solid #ebebeb; }
+          .find-shop .shop-advantages .advantages-list:last-child {
+            border: none; } }
+      .find-shop .shop-advantages .advantages-list img {
+        width: 50px;
+        margin-bottom: 8px; }
+        @media screen and (min-width: 1024px) {
+          .find-shop .shop-advantages .advantages-list img {
+            width: auto; } }
+      .find-shop .shop-advantages .advantages-list span {
+        text-align: center;
+        font-size: 1.2rem; }
+      .find-shop .shop-advantages .advantages-list em {
+        color: #e22219;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.9rem; }
+        @media screen and (min-width: 1024px) {
+          .find-shop .shop-advantages .advantages-list em {
+            font-size: 1.2rem; } }
 
 /*# sourceMappingURL=style.css.map */

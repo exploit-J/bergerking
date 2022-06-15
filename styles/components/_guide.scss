@@ -1,0 +1,23 @@
+.guide {
+  display: flex;
+  .app {
+    width: 50%;
+    background-color: $app-guide;
+    a {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .delivery {
+    width: 50%;
+    background-color: $del-guide;
+    a {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

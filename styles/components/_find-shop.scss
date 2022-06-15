@@ -1,0 +1,63 @@
+.find-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  h2 {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 8px 26px;
+    border-radius: 12px;
+    background-color: $red;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .shop-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    .advantages-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% / 3);
+      margin-top: 30px;
+      @include responsive {
+        width: fit-content;
+        padding-right: 30px;
+        padding-left: 30px;
+        border-right: 1px solid $border;
+        &:last-child {
+          border: none;
+        }
+      }
+      img {
+        width: 50px;
+        margin-bottom: 8px;
+        @include responsive {
+          width: auto;
+        }
+      }
+      span {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      em {
+        color: $red;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.9rem;
+        @include responsive {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
