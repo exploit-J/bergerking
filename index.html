@@ -148,7 +148,7 @@
       </div>
     </header>
     <main>
-      <section class="slide">
+      <section class="slide visually-hidden">
         <h2 class="visually-hidden">메인배너 슬라이드</h2>
         <ul class="slide-sm sm-only">
           <li class="item">
@@ -210,61 +210,78 @@
           <button type="button"></button>
         </div>
       </section>
-      <section class="introduce">
+      <section class="introduce visually-hidden">
         <h2 class="visually-hidden">신제품 소개 및 SNS 안내</h2>
-        <div class="new-item">youtube video</div>
+        <div class="new-item">
+          <iframe
+            src="https://www.youtube.com/embed/KUmrD90Q8I8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <ul class="sns">
           <li class="sns-item">
-            <div class="img">
-              <img
-                src="assets/img/sns/ico_youtube.png"
-                alt="유튜브-메인아이콘"
-              />
-            </div>
-            <div class="sns-desc">
-              <div class="sns-name">YOUTUBE</div>
-              <div class="sns-detail">
+            <a href="#">
+              <div class="img">
                 <img
-                  src="assets/img/sns/sns-span-youtube.png"
-                  alt="유튜브-소형아이콘"
+                  src="assets/img/sns/ico_youtube.png"
+                  alt="유튜브-메인아이콘"
                 />
-                <span class="count">구독4.9만</span>
               </div>
-            </div>
+              <div class="sns-desc">
+                <div class="sns-name">YOUTUBE</div>
+                <div class="sns-detail">
+                  <img
+                    src="assets/img/sns/sns-span-youtube.png"
+                    alt="유튜브-소형아이콘"
+                  />
+                  <span class="count">구독4.9만</span>
+                </div>
+              </div>
+            </a>
           </li>
           <li class="sns-item">
-            <div class="img">
-              <img src="assets/img/sns/ico_face.png" alt="페북-메인아이콘" />
-            </div>
-            <div class="sns-desc">
-              <div class="sns-name">FACEBOOK</div>
-              <div class="sns-detail">
-                <img
-                  src="assets/img/sns/sns-span-like.png"
-                  alt="페북-소형아이콘"
-                />
-                <span class="count">좋아요47.8만</span>
+            <a href="#">
+              <div class="img">
+                <img src="assets/img/sns/ico_face.png" alt="페북-메인아이콘" />
               </div>
-            </div>
+              <div class="sns-desc">
+                <div class="sns-name">FACEBOOK</div>
+                <div class="sns-detail">
+                  <img
+                    src="assets/img/sns/sns-span-like.png"
+                    alt="페북-소형아이콘"
+                  />
+                  <span class="count">좋아요47.8만</span>
+                </div>
+              </div>
+            </a>
           </li>
           <li class="sns-item">
-            <div class="img">
-              <img src="assets/img/sns/ico_inst.png" alt="인스타-메인아이콘" />
-            </div>
-            <div class="sns-desc">
-              <div class="sns-name">INSTAGRAM</div>
-              <div class="sns-detail">
+            <a href="#">
+              <div class="img">
                 <img
-                  src="assets/img/sns/sns-span-follow.png"
-                  alt="인스타-소형아이콘"
+                  src="assets/img/sns/ico_inst.png"
+                  alt="인스타-메인아이콘"
                 />
-                <span class="count">팔로워74.9K</span>
               </div>
-            </div>
+              <div class="sns-desc">
+                <div class="sns-name">INSTAGRAM</div>
+                <div class="sns-detail">
+                  <img
+                    src="assets/img/sns/sns-span-follow.png"
+                    alt="인스타-소형아이콘"
+                  />
+                  <span class="count">팔로워74.9K</span>
+                </div>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
-      <section class="guide visually-hidden">
+      <section class="guide">
         <h2 class="visually-hidden">버거킹 앱 및 딜리버리 이용안내</h2>
         <div class="app">
           <a href="#"

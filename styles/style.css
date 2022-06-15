@@ -187,4 +187,41 @@ nav {
   .slide button[data-action="start"] {
     display: none; }
 
+.introduce {
+  background-color: #683a2f; }
+  .introduce .new-item {
+    width: 100%; }
+    .introduce .new-item iframe {
+      width: 100%;
+      height: 60vh; }
+  .introduce .sns {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px; }
+    .introduce .sns-item a {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .introduce .sns-item a .img img {
+        width: 45px; }
+      .introduce .sns-item a .sns-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .introduce .sns-item a .sns-desc .sns-name {
+          margin-bottom: 10px;
+          color: #fff;
+          font-size: 0.8rem; }
+        .introduce .sns-item a .sns-desc .sns-detail {
+          display: flex;
+          align-items: center;
+          padding: 4px;
+          background-color: #fff;
+          border-radius: 4px; }
+          .introduce .sns-item a .sns-desc .sns-detail img {
+            width: 13px;
+            margin-right: 4px; }
+          .introduce .sns-item a .sns-desc .sns-detail .count {
+            font-size: 0.8rem; }
+
 /*# sourceMappingURL=style.css.map */
