@@ -66,4 +66,39 @@ address {
   white-space: nowrap !important;
   border: 0 !important; }
 
+header {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  background-color: gray; }
+  @media screen and (min-width: 1024px) {
+    header {
+      height: 120px; } }
+  header .inner-header .logo {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .inner-header .logo a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .inner-header .logo a img {
+        width: 44px; }
+  header .inner-header .delivery {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #e22219;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    transform: translateY(-50%); }
+  header .inner-header .nav-open {
+    position: absolute;
+    top: 22px;
+    left: 20px; }
+    header .inner-header .nav-open img {
+      width: 22px; }
+
 /*# sourceMappingURL=style.css.map */
