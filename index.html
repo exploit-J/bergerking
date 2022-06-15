@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>버거킹</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -16,15 +21,30 @@
             <img src="assets/img/main/logo.gif" alt="메인로고"
           /></a>
         </div>
+        <button class="nav-open sm-only" type="button">
+          <img src="assets/img/main/nav-sm-open.png" alt="nav메뉴열기버튼" />
+        </button>
         <nav>
+          <button class="nav-close sm-only" type="button">
+            <img src="assets/img/main/nav-sm-close.png" alt="nav메뉴닫기버튼" />
+          </button>
           <ul class="menu">
             <li class="menu-item">
-              <button type="button">메뉴소개</button>
-              <span
-                ><img
-                  src="assets/img/main/nav-lg-li.gif"
-                  alt="메뉴_화살표아이콘"
-              /></span>
+              <span class="title"
+                >메뉴소개
+                <span class="arrow sm-only">
+                  <img
+                    src="assets/img/main/nav-sm-li.png"
+                    alt="메뉴_화살표아이콘"
+                  />
+                </span>
+                <span class="arrow lg-only">
+                  <img
+                    src="assets/img/main/nav-lg-li.gif"
+                    alt="메뉴_화살표아이콘"
+                  /> </span
+              ></span>
+
               <ul class="submenu">
                 <li class="submenu-item"><a href="#">스페셜&할인팩</a></li>
                 <li class="submenu-item"><a href="#">프리미엄</a></li>
@@ -37,43 +57,80 @@
               </ul>
             </li>
             <li class="menu-item">
-              <button type="button">매장소개</button>
-              <span
-                ><img
-                  src="assets/img/main/nav-lg-li.gif"
-                  alt="메뉴_화살표아이콘"
-              /></span>
+              <span class="title"
+                >매장소개<span class="arrow sm-only">
+                  <img
+                    src="assets/img/main/nav-sm-li.png"
+                    alt="메뉴_화살표아이콘"
+                  />
+                </span>
+                <span class="arrow lg-only">
+                  <img
+                    src="assets/img/main/nav-lg-li.gif"
+                    alt="메뉴_화살표아이콘"
+                  /> </span
+              ></span>
+
               <ul class="submenu">
                 <li class="submenu-item"><a href="#">매장찾기</a></li>
               </ul>
             </li>
-            <li>
-              <button type="button">이벤트</button>
-              <span
-                ><img
-                  src="assets/img/main/nav-lg-li.gif"
-                  alt="메뉴_화살표아이콘"
-              /></span>
+            <li class="menu-item">
+              <span class="title"
+                >이벤트<span class="arrow sm-only">
+                  <img
+                    src="assets/img/main/nav-sm-li.png"
+                    alt="메뉴_화살표아이콘"
+                  />
+                </span>
+                <span class="arrow lg-only">
+                  <img
+                    src="assets/img/main/nav-lg-li.gif"
+                    alt="메뉴_화살표아이콘"
+                  /> </span
+              ></span>
               <ul class="submenu">
                 <li class="submenu-item"><a href="#">이벤트</a></li>
                 <li class="submenu-item"><a href="#">신규매장</a></li>
               </ul>
             </li>
-            <li>
-              <button type="button">브랜드스토리</button>
-              <span
-                ><img
-                  src="assets/img/main/nav-lg-li.gif"
-                  alt="메뉴_화살표아이콘"
-              /></span>
+            <li class="menu-item">
+              <span class="title"
+                >브랜드스토리<span class="arrow sm-only">
+                  <img
+                    src="assets/img/main/nav-sm-li.png"
+                    alt="메뉴_화살표아이콘"
+                  />
+                </span>
+                <span class="arrow lg-only">
+                  <img
+                    src="assets/img/main/nav-lg-li.gif"
+                    alt="메뉴_화살표아이콘"
+                  /> </span
+              ></span>
+
               <ul class="submenu">
                 <li class="submenu-item"><a href="#">BRAND</a></li>
                 <li class="submenu-item"><a href="#">WHOPPER</a></li>
                 <li class="submenu-item"><a href="#">COMM.</a></li>
               </ul>
             </li>
-            <li class="sm-only">
-              고객센터
+            <li class="menu-item sm-only">
+              <span class="title"
+                >고객센터
+                <span class="arrow sm-only">
+                  <img
+                    src="assets/img/main/nav-sm-li.png"
+                    alt="메뉴_화살표아이콘"
+                  />
+                </span>
+                <span class="arrow lg-only">
+                  <img
+                    src="assets/img/main/nav-lg-li.gif"
+                    alt="메뉴_화살표아이콘"
+                  /> </span
+              ></span>
+
               <ul class="submenu">
                 <li class="submenu-item"><a href="#">공지사항</a></li>
                 <li class="submenu-item"><a href="#">버거킹앱이용안내</a></li>
@@ -88,14 +145,57 @@
         <button class="delivery" type="button">
           <a href="#"><strong>딜리버리주문</strong></a>
         </button>
-        <button class="nav-open sm-only" type="button">
-          <img src="assets/img/main/nav-sm-open.png" alt="nav메뉴오픈버튼" />
-        </button>
       </div>
     </header>
     <main class="visually-hidden">
       <section class="slide">
         <h2 class="visually-hidden">메인배너 슬라이드</h2>
+        <ul class="slide-lg lg-only">
+          <li class="item">
+            <a href="#"
+              ><img
+                src="assets/img/main-slide/slide-lg-01.png"
+                alt="slide-lg-01"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                src="assets/img/main-slide/slide-lg-02.png"
+                alt="slide-lg-02"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                src="assets/img/main-slide/slide-lg-03.png"
+                alt="slide-lg-03"
+            /></a>
+          </li>
+        </ul>
+        <ul class="slide-sm sm-only">
+          <li class="item">
+            <a href="#"
+              ><img
+                src="assets/img/main-slide/slide-sm-01.png"
+                alt="slide-sm-01"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                src="assets/img/main-slide/slide-sm-02.png"
+                alt="slide-sm-02"
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#"
+              ><img
+                src="assets/img/main-slide/slide-sm-03.png"
+                alt="slide-sm-03"
+            /></a>
+          </li>
+        </ul>
       </section>
       <section class="introduce">
         <h2 class="visually-hidden">신제품 소개 및 SNS 안내</h2>
