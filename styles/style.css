@@ -9,8 +9,7 @@ html {
   font-family: "Noto Sans KR", sans-serif; }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
-  overflow-x: hidden; }
+  font-family: "Noto Sans KR", sans-serif; }
 
 h1 {
   margin: 0; }
@@ -154,5 +153,38 @@ nav {
         nav .menu-item .submenu-item {
           margin-bottom: 8px;
           font-size: 1.2rem; }
+
+.slide {
+  position: relative;
+  width: 100vw;
+  overflow: hidden; }
+  .slide .slide-sm .item a img {
+    width: 100%; }
+  .slide .slide-ctrl button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .slide .slide-ctrl button img {
+      width: 15px; }
+  .slide .slide-ctrl .prev {
+    left: 10px; }
+  .slide .slide-ctrl .next {
+    right: 10px; }
+  .slide .slide-nav {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .slide .slide-nav button {
+      width: 12px;
+      height: 12px;
+      margin: 0 4px;
+      background-color: #f8f8f8;
+      border-radius: 50%; }
+      .slide .slide-nav button.tns-nav-active {
+        background-color: #e22219; }
+  .slide button[data-action="stop"],
+  .slide button[data-action="start"] {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
