@@ -70,7 +70,8 @@ header {
   position: relative;
   width: 100%;
   height: 56px;
-  background-color: gray; }
+  overflow: hidden;
+  z-index: 20; }
   @media screen and (min-width: 1024px) {
     header {
       height: 120px; } }
@@ -93,12 +94,65 @@ header {
     background-color: #e22219;
     border-radius: 30px;
     font-size: 0.7rem;
+    color: #fff;
     transform: translateY(-50%); }
   header .inner-header .nav-open {
     position: absolute;
-    top: 22px;
+    top: 20px;
     left: 20px; }
     header .inner-header .nav-open img {
       width: 22px; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  z-index: 30; }
+  nav.active {
+    transform: translateX(0); }
+  nav .nav-close {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb; }
+    nav .nav-close img {
+      width: 20px;
+      margin-left: 20px; }
+  nav .menu {
+    padding-left: 20px;
+    padding-top: 56px; }
+    nav .menu-item {
+      border-bottom: 1px solid #ebebeb; }
+      nav .menu-item .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+        font-size: 1.4rem;
+        font-weight: 700; }
+        nav .menu-item .title .arrow {
+          margin-right: 20px; }
+          nav .menu-item .title .arrow img {
+            height: 12px; }
+      nav .menu-item .submenu {
+        display: none;
+        padding-left: 20px;
+        padding-bottom: 15px; }
+        nav .menu-item .submenu.active {
+          display: block; }
+        nav .menu-item .submenu-item {
+          margin-bottom: 8px;
+          font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */
