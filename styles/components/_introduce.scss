@@ -35,6 +35,9 @@
         .img {
           img {
             width: 45px;
+            @include responsive {
+              width: 85px;
+            }
           }
         }
         .sns-desc {
@@ -45,6 +48,10 @@
             margin-bottom: 10px;
             color: #fff;
             font-size: 0.8rem;
+            @include responsive {
+              font-size: 1rem;
+              font-weight: 700;
+            }
           }
           .sns-detail {
             display: flex;
@@ -52,12 +59,19 @@
             padding: 4px;
             background-color: #fff;
             border-radius: 4px;
+            @include responsive {
+              padding: 4px 8px;
+            }
             img {
               width: 13px;
               margin-right: 4px;
             }
             .count {
               font-size: 0.7rem;
+              @include responsive {
+                font-size: 0.9rem;
+                font-weight: 700;
+              }
             }
           }
         }
