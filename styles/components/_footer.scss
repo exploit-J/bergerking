@@ -1,0 +1,153 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $footer-bg;
+  .sitemap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1144px;
+      &-item {
+        font-size: 1.5rem;
+        color: $footer-title;
+        .submenu {
+          margin-top: 10px;
+          &-item {
+            margin-bottom: 8px;
+            color: $footer-text;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    position: relative;
+    width: 100%;
+    max-width: 1144px;
+    border-top: 1px solid $footer-title;
+    .menu {
+      padding-top: 40px;
+      @include responsive {
+        position: absolute;
+        right: 0;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        @include responsive {
+          padding: 0;
+        }
+        li {
+          color: $footer-text;
+          font-size: 0.8rem;
+          @include responsive {
+            font-size: 1rem;
+            &::after {
+              content: "";
+              display: inline-block;
+              height: 50%;
+              margin: 0 8px;
+              border-left: 1px solid $footer-text;
+            }
+            &:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      .footer-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        padding: 0 20px;
+        color: $footer-title;
+        @include responsive {
+          padding: 0;
+        }
+        a {
+          display: block;
+          padding: 4px 8px;
+          margin-right: 8px;
+          border: 1px solid $footer-text;
+          border-radius: 12px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .copyright {
+      padding: 0 20px;
+      @include responsive {
+        padding: 40px 0;
+      }
+      .logo {
+        img {
+          margin-bottom: 20px;
+        }
+      }
+      .add {
+        color: $footer-text;
+        font-size: 0.7rem;
+        @include responsive {
+          display: flex;
+          font-size: 0.9rem;
+          address {
+            &::after {
+              content: "";
+              display: inline-block;
+              width: 1px;
+              height: 50%;
+              margin: 0 8px;
+              border-left: 1px solid $footer-text;
+            }
+          }
+          span {
+          }
+        }
+      }
+      .business {
+        margin-bottom: 20px;
+        color: $footer-text;
+        font-size: 0.7rem;
+        @include responsive {
+          display: flex;
+          font-size: 0.9rem;
+        }
+        span {
+          display: block;
+          @include responsive {
+            &:first-child::after {
+              content: "";
+              display: inline-block;
+              width: 1px;
+              height: 50%;
+              margin: 0 8px;
+              border-left: 1px solid $footer-text;
+            }
+          }
+        }
+      }
+      .sns {
+        a {
+          img {
+            width: 16px;
+            @include responsive {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

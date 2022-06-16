@@ -329,4 +329,124 @@ nav {
       color: #fff;
       font-size: 2rem; }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2b0200; }
+  footer .sitemap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 30px; }
+    footer .sitemap .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1144px; }
+      footer .sitemap .menu-item {
+        font-size: 1.5rem;
+        color: #f5ebdc; }
+        footer .sitemap .menu-item .submenu {
+          margin-top: 10px; }
+          footer .sitemap .menu-item .submenu-item {
+            margin-bottom: 8px;
+            color: #bba391;
+            font-size: 1rem; }
+  footer .footer {
+    position: relative;
+    width: 100%;
+    max-width: 1144px;
+    border-top: 1px solid #f5ebdc; }
+    footer .footer .menu {
+      padding-top: 40px; }
+      @media screen and (min-width: 1024px) {
+        footer .footer .menu {
+          position: absolute;
+          right: 0; } }
+      footer .footer .menu ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 20px; }
+        @media screen and (min-width: 1024px) {
+          footer .footer .menu ul {
+            padding: 0; } }
+        footer .footer .menu ul li {
+          color: #bba391;
+          font-size: 0.8rem; }
+          @media screen and (min-width: 1024px) {
+            footer .footer .menu ul li {
+              font-size: 1rem; }
+              footer .footer .menu ul li::after {
+                content: "";
+                display: inline-block;
+                height: 50%;
+                margin: 0 8px;
+                border-left: 1px solid #bba391; }
+              footer .footer .menu ul li:last-child::after {
+                display: none; } }
+      footer .footer .menu .footer-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        padding: 0 20px;
+        color: #f5ebdc; }
+        @media screen and (min-width: 1024px) {
+          footer .footer .menu .footer-button {
+            padding: 0; } }
+        footer .footer .menu .footer-button a {
+          display: block;
+          padding: 4px 8px;
+          margin-right: 8px;
+          border: 1px solid #bba391;
+          border-radius: 12px; }
+          footer .footer .menu .footer-button a:last-child {
+            margin-right: 0; }
+    footer .footer .copyright {
+      padding: 0 20px; }
+      @media screen and (min-width: 1024px) {
+        footer .footer .copyright {
+          padding: 40px 0; } }
+      footer .footer .copyright .logo img {
+        margin-bottom: 20px; }
+      footer .footer .copyright .add {
+        color: #bba391;
+        font-size: 0.7rem; }
+        @media screen and (min-width: 1024px) {
+          footer .footer .copyright .add {
+            display: flex;
+            font-size: 0.9rem; }
+            footer .footer .copyright .add address::after {
+              content: "";
+              display: inline-block;
+              width: 1px;
+              height: 50%;
+              margin: 0 8px;
+              border-left: 1px solid #bba391; } }
+      footer .footer .copyright .business {
+        margin-bottom: 20px;
+        color: #bba391;
+        font-size: 0.7rem; }
+        @media screen and (min-width: 1024px) {
+          footer .footer .copyright .business {
+            display: flex;
+            font-size: 0.9rem; } }
+        footer .footer .copyright .business span {
+          display: block; }
+          @media screen and (min-width: 1024px) {
+            footer .footer .copyright .business span:first-child::after {
+              content: "";
+              display: inline-block;
+              width: 1px;
+              height: 50%;
+              margin: 0 8px;
+              border-left: 1px solid #bba391; } }
+      footer .footer .copyright .sns a img {
+        width: 16px; }
+        @media screen and (min-width: 1024px) {
+          footer .footer .copyright .sns a img {
+            width: 25px; } }
+
 /*# sourceMappingURL=style.css.map */
