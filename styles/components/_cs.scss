@@ -1,0 +1,42 @@
+.cs {
+  padding: 20px;
+  background: url("../../assets/img/main/bg_home_bottom.png");
+  @include responsive {
+    position: relative;
+  }
+  .inner-cs {
+    max-width: 1440px;
+    h2 {
+      margin-bottom: 16px;
+      color: #fff;
+      font-size: 1rem;
+      @include responsive {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: 0.8rem;
+      @include responsive {
+        margin-bottom: 0;
+        font-size: 1.1rem;
+      }
+    }
+    .cs-call {
+      @include responsive {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+      img {
+        width: 24px;
+      }
+      strong {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+  }
+}

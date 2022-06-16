@@ -294,4 +294,39 @@ nav {
           .find-shop .shop-advantages .advantages-list em {
             font-size: 1.2rem; } }
 
+.cs {
+  padding: 20px;
+  background: url("../../assets/img/main/bg_home_bottom.png"); }
+  @media screen and (min-width: 1024px) {
+    .cs {
+      position: relative; } }
+  .cs .inner-cs {
+    max-width: 1440px; }
+    .cs .inner-cs h2 {
+      margin-bottom: 16px;
+      color: #fff;
+      font-size: 1rem; }
+      @media screen and (min-width: 1024px) {
+        .cs .inner-cs h2 {
+          font-size: 2rem; } }
+    .cs .inner-cs p {
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: 0.8rem; }
+      @media screen and (min-width: 1024px) {
+        .cs .inner-cs p {
+          margin-bottom: 0;
+          font-size: 1.1rem; } }
+    @media screen and (min-width: 1024px) {
+      .cs .inner-cs .cs-call {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%); } }
+    .cs .inner-cs .cs-call img {
+      width: 24px; }
+    .cs .inner-cs .cs-call strong {
+      color: #fff;
+      font-size: 2rem; }
+
 /*# sourceMappingURL=style.css.map */
