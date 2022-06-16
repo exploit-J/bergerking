@@ -15,6 +15,9 @@ navOpenButton.addEventListener("click", () => {
 });
 navCloseButton.addEventListener("click", () => {
   document.querySelector("nav").classList.remove("active");
+  navMenuItem.forEach((item) => {
+    item.lastElementChild.classList.remove("active");
+  });
 });
 
 navMenuItem.forEach((item) => {
