@@ -4,6 +4,7 @@ const smSlide = tns({
   controlsContainer: ".slide .slide-ctrl",
   autoplay: true,
   autoplayTimeout: 4000,
+  preventScrollOnTouch: "auto",
 });
 
 const lgSlide = tns({
@@ -12,4 +13,6 @@ const lgSlide = tns({
   controlsContainer: ".slide .slide-ctrl",
   autoplay: true,
   autoplayTimeout: 4000,
+  preventScrollOnTouch: "auto",
+  mouseDrag: true,
 });
