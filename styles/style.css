@@ -492,49 +492,51 @@ main {
             .find-shop-wrap .shop-advantages .advantages-list em {
               font-size: 1.2rem; } }
 
-@media screen and (min-width: 1024px) {
-  .cs {
-    display: flex;
-    justify-content: center; } }
-
-.cs .inner-cs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  height: 15vh;
-  padding-left: 10%;
-  background: url("../../assets/img/main/bg_home_bottom.png") no-repeat;
-  background-size: cover; }
-  .cs .inner-cs h2 {
-    margin-bottom: 16px;
-    color: #fff;
-    font-size: 1rem; }
-    @media screen and (min-width: 1024px) {
-      .cs .inner-cs h2 {
-        font-size: 2rem; } }
-  .cs .inner-cs p {
-    margin-bottom: 30px;
-    color: #fff;
-    font-size: 0.8rem; }
-    @media screen and (min-width: 1024px) {
-      .cs .inner-cs p {
-        margin-bottom: 0;
-        font-size: 1.1rem; } }
+.cs {
+  height: 180px; }
   @media screen and (min-width: 1024px) {
-    .cs .inner-cs .cs-call {
-      position: absolute;
-      top: 50%;
-      right: 10%;
-      transform: translateY(-50%); } }
-  .cs .inner-cs .cs-call img {
-    width: 24px; }
-  .cs .inner-cs .cs-call strong {
-    color: #fff;
-    font-size: 2rem; }
+    .cs {
+      display: flex;
+      justify-content: center;
+      height: 200px; } }
+  .cs .inner-cs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    padding: 20px 10%;
+    background: url("../../assets/img/main/bg_home_bottom.png") no-repeat;
+    background-size: cover; }
+    .cs .inner-cs h2 {
+      margin-bottom: 16px;
+      color: #fff;
+      font-size: 1rem; }
+      @media screen and (min-width: 1024px) {
+        .cs .inner-cs h2 {
+          font-size: 2rem; } }
+    .cs .inner-cs p {
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: 0.8rem; }
+      @media screen and (min-width: 1024px) {
+        .cs .inner-cs p {
+          margin-bottom: 0;
+          font-size: 1.1rem; } }
+    @media screen and (min-width: 1024px) {
+      .cs .inner-cs .cs-call {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%); } }
+    .cs .inner-cs .cs-call img {
+      width: 24px; }
+    .cs .inner-cs .cs-call strong {
+      color: #fff;
+      font-size: 2rem; }
 
 footer {
   display: flex;

@@ -1,8 +1,10 @@
 .cs {
+  height: 180px;
   @include responsive {
     display: flex;
     justify-content: center;
     // align-items: center;
+    height: 200px;
   }
   .inner-cs {
     display: flex;
@@ -12,8 +14,8 @@
     position: relative;
     width: 100%;
     max-width: 1440px;
-    height: 15vh;
-    padding-left: 10%;
+    height: 100%;
+    padding: 20px 10%;
     background: url("../../assets/img/main/bg_home_bottom.png") no-repeat;
     background-size: cover;
     h2 {

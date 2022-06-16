@@ -3,7 +3,6 @@ const gnbArea = document.querySelector(".menu-area");
 const navOpenButton = document.querySelector("header .nav-open");
 const navCloseButton = document.querySelector("header .nav-close");
 const navMenuItem = document.querySelectorAll("header .menu-item");
-console.log(navMenuItem);
 
 gnbMenu.addEventListener("mouseover", () => {
   gnbArea.classList.add("active");
