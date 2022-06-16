@@ -3,14 +3,23 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
+  @include responsive {
+    padding: 120px 20px;
+  }
   h2 {
     margin-bottom: 8px;
     text-align: center;
+    @include responsive {
+      margin-bottom: 20px;
+    }
   }
   p {
     margin-bottom: 16px;
     text-align: center;
     font-size: 0.9rem;
+    @include responsive {
+      margin-bottom: 20px;
+    }
   }
   button {
     padding: 8px 26px;
@@ -19,10 +28,16 @@
     font-size: 1.1rem;
     font-weight: 700;
     color: #fff;
+    @include responsive {
+      margin-bottom: 20px;
+    }
   }
   .shop-advantages {
     display: flex;
     flex-wrap: wrap;
+    @include responsive {
+      padding: 20px 0;
+    }
     .advantages-list {
       display: flex;
       flex-direction: column;

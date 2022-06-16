@@ -1,22 +1,29 @@
 .guide {
   display: flex;
-  .app {
-    width: 50%;
-    background-color: $app-guide;
-    a {
-      img {
-        display: block;
-        width: 100%;
+  justify-content: center;
+  &-wrap {
+    display: flex;
+    @include responsive {
+      max-width: 1440px;
+    }
+    .app {
+      width: 50%;
+      background-color: $app-guide;
+      a {
+        img {
+          display: block;
+          width: 100%;
+        }
       }
     }
-  }
-  .delivery {
-    width: 50%;
-    background-color: $del-guide;
-    a {
-      img {
-        display: block;
-        width: 100%;
+    .delivery {
+      width: 50%;
+      background-color: $del-guide;
+      a {
+        img {
+          display: block;
+          width: 100%;
+        }
       }
     }
   }

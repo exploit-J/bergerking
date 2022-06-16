@@ -1,11 +1,21 @@
 .cs {
-  padding: 20px;
-  background: url("../../assets/img/main/bg_home_bottom.png");
   @include responsive {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
   }
   .inner-cs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
     max-width: 1440px;
+    height: 15vh;
+    padding-left: 10%;
+    background: url("../../assets/img/main/bg_home_bottom.png") no-repeat;
+    background-size: cover;
     h2 {
       margin-bottom: 16px;
       color: #fff;
@@ -27,7 +37,7 @@
       @include responsive {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 10%;
         transform: translateY(-50%);
       }
       img {

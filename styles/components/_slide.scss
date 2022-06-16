@@ -1,53 +1,63 @@
 .slide {
-  position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
-  .slide-sm {
-    .item {
-      a {
-        img {
-          display: block;
-          width: 100%;
+  display: flex;
+  justify-content: center;
+  &-wrap {
+    position: relative;
+    max-width: 1440px;
+    .slide-sm {
+      .item {
+        a {
+          img {
+            display: block;
+            width: 100%;
+          }
         }
       }
     }
-  }
-  .slide-lg {
-  }
-  .slide-ctrl {
-    button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+    .slide-lg {
       img {
-        width: 15px;
+        display: block;
+        width: 100%;
       }
     }
-    .prev {
-      left: 10px;
-    }
-    .next {
-      right: 10px;
-    }
-  }
-  .slide-nav {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    button {
-      width: 12px;
-      height: 12px;
-      margin: 0 4px;
-      background-color: $background;
-      border-radius: 50%;
-      &.tns-nav-active {
-        background-color: $red;
+
+    .slide-ctrl {
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        img {
+          width: 15px;
+        }
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
       }
     }
-  }
-  button[data-action="stop"],
-  button[data-action="start"] {
-    display: none;
+    .slide-nav {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      button {
+        width: 12px;
+        height: 12px;
+        margin: 0 4px;
+        background-color: $background;
+        border-radius: 50%;
+        &.tns-nav-active {
+          background-color: $red;
+        }
+      }
+    }
+    button[data-action="stop"],
+    button[data-action="start"] {
+      display: none;
+    }
   }
 }
