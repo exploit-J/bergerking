@@ -151,7 +151,8 @@ header {
               visibility: visible;
               opacity: 1; } }
         header .inner-header nav .menu-item {
-          border-bottom: 1px solid #ebebeb; }
+          border-bottom: 1px solid #ebebeb;
+          cursor: pointer; }
           @media screen and (min-width: 1024px) {
             header .inner-header nav .menu-item {
               width: 25%;

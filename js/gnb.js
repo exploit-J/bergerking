@@ -16,3 +16,12 @@ navOpenButton.addEventListener("click", () => {
 navCloseButton.addEventListener("click", () => {
   document.querySelector("nav").classList.remove("active");
 });
+
+navMenuItem.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    navMenuItem.forEach((item) => {
+      item.lastElementChild.classList.remove("active");
+      e.currentTarget.lastElementChild.classList.add("active");
+    });
+  });
+});

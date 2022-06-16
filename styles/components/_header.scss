@@ -92,6 +92,7 @@ header {
         }
         &-item {
           border-bottom: 1px solid $border;
+          cursor: pointer;
           @include responsive {
             width: 25%;
             border: none;
