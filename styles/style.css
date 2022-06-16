@@ -81,11 +81,11 @@ header {
       background-color: #fff;
       overflow: visible; } }
   header .inner-header {
+    position: relative;
     width: 100%;
     max-width: 1144px; }
     @media screen and (min-width: 1024px) {
       header .inner-header {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -224,6 +224,7 @@ header {
       background-color: #e22219;
       border-radius: 30px;
       font-size: 0.7rem;
+      letter-spacing: 0.13rem;
       color: #fff;
       transform: translateY(-50%); }
       @media screen and (min-width: 1024px) {
@@ -447,6 +448,9 @@ main {
           transition: 0.5s; }
           .find-shop-wrap button:hover {
             opacity: 0.5; } }
+      .find-shop-wrap button a {
+        display: block;
+        transform: translateY(2px); }
     .find-shop-wrap .shop-advantages {
       display: flex;
       flex-wrap: wrap;

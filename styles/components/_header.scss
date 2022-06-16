@@ -14,11 +14,11 @@ header {
     overflow: visible;
   }
   .inner-header {
+    position: relative;
     width: 100%;
     max-width: 1144px;
 
     @include responsive {
-      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -178,6 +178,7 @@ header {
       background-color: $red;
       border-radius: 30px;
       font-size: 0.7rem;
+      letter-spacing: 0.13rem;
       color: #fff;
       transform: translateY(-50%);
       @include responsive {
